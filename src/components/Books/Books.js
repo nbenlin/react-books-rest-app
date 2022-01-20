@@ -2,7 +2,7 @@ import BookList from "../BookList";
 import BooksFilter from "../BooksFilter";
 import styles from "./Books.module.css";
 
-export const Books = () => {
+const Books = () => {
   return (
     <div className={styles.booksWrapper}>
       <BooksFilter />
@@ -10,3 +10,4 @@ export const Books = () => {
     </div>
   );
 };
+export default Books;

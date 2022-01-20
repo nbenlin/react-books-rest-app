@@ -1,6 +1,6 @@
 import styles from "./Homepage.module.css";
 
-export const Homepage = () => {
+const Homepage = () => {
   return (
     <div className={styles.homeContainer}>
       <header className={styles.header}>
@@ -15,3 +15,4 @@ export const Homepage = () => {
     </div>
   );
 };
+export default Homepage;
