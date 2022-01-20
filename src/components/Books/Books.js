@@ -1,6 +1,6 @@
-import BookList from "../BookList";
-import BooksFilter from "../BooksFilter";
 import styles from "./Books.module.css";
+import BooksFilter from "../BookFilter/BookFilter";
+import BookList from "../BookList/BookList";
 
 const Books = () => {
   return (
