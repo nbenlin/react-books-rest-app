@@ -2,11 +2,11 @@ import styles from "./Books.module.css";
 import BooksFilter from "../BookFilter/BookFilter";
 import BookList from "../BookList/BookList";
 
-const Books = () => {
+const Books = ({ books }) => {
   return (
     <div className={styles.booksWrapper}>
       <BooksFilter />
-      <BookList />
+      <BookList books={books} />
     </div>
   );
 };

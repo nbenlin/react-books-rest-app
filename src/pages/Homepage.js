@@ -1,7 +1,7 @@
 import Books from "../components/Books/Books";
 import styles from "./Homepage.module.css";
 
-const Homepage = () => {
+const Homepage = ({ books }) => {
   return (
     <div className={styles.homeContainer}>
       <div className={styles.header}>
@@ -13,7 +13,7 @@ const Homepage = () => {
         <h1>Book finder</h1>
       </div>
       <main>
-        <Books />
+        <Books books={books} />
       </main>
     </div>
   );

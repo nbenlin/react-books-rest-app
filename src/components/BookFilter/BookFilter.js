@@ -3,7 +3,7 @@ import styles from "./BookFilter.module.css";
 import { BiSearchAlt as SearchIcon } from "react-icons/bi";
 import { RiCloseFill as ExitIcon } from "react-icons/ri";
 
-const BooksFilter = () => {
+const BookFilter = () => {
   const [text, setText] = useState("");
 
   const enteredTextHandler = (event) => {
@@ -28,4 +28,4 @@ const BooksFilter = () => {
     </div>
   );
 };
-export default BooksFilter;
+export default BookFilter;

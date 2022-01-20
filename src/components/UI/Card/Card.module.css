@@ -1,7 +1,37 @@
 .card {
-  width: 280px;
-  height: 240px;
-  background-color: #fff;
-  border: 1px solid #ffeead;
-  border-radius: 12px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 370px;
+  height: 250px;
+  background-color: #3f0071;
+  border-radius: 35px;
+}
+
+.cardBody {
+  position: absolute;
+  top: 3rem;
+  right: 8rem;
+}
+
+.image {
+  position: absolute;
+  top: -40px;
+  left: 20px;
+  width: 130px;
+  height: 190px;
+  border-radius: 20px;
+}
+
+.title {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.author {
+  color: #ffffff80;
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
 }
