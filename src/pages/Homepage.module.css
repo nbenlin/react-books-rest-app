@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+h1 {
+  font-size: 4rem;
+  color: #d9534f;
+  font-family: "Lobster", cursive;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.books {
+  width: 50px;
+  margin: 10px;
+}
