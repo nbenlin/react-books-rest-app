@@ -8,6 +8,8 @@ const Card = ({ book }) => {
       : book.volumeInfo.title;
 
   const authors = book.volumeInfo.authors.toString();
+  const categories = book.volumeInfo.categories.toString();
+
   return (
     <div className={styles.card}>
       <div className={styles.cardHeader}>
@@ -26,6 +28,7 @@ const Card = ({ book }) => {
       <div className={styles.cardBody}>
         <p className={styles.title}>{titleWithEllipsis}</p>
         <p className={styles.author}>{authors}</p>
+        <p className={styles.categoryName}>{categories}</p>
       </div>
     </div>
   );

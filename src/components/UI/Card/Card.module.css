@@ -5,7 +5,7 @@
   align-items: flex-start;
   width: 370px;
   height: 250px;
-  background-color: #3f0071;
+  background: linear-gradient(#3f0071, rgba(0, 0, 0, 0));
   border-radius: 35px;
 }
 
@@ -37,6 +37,27 @@
 
 .author {
   color: #ffffff80;
+  font-weight: 600;
   font-size: 1.4rem;
   margin-top: 1.5rem;
+}
+
+.categories {
+  margin-top: 1rem;
+  background-color: #884c8840;
+  border-radius: 12px;
+}
+
+.categoryName {
+  margin-top: 2rem;
+  background-color: #884c8840;
+  border-radius: 12px;
+  color: #ffffff80;
+  padding: 10px;
+  max-width: 16rem;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
