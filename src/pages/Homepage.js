@@ -1,4 +1,5 @@
 import Books from "../components/Books/Books";
+import Sidebar from "../components/UI/Sidebar/Sidebar";
 import styles from "./Homepage.module.css";
 
 const Homepage = ({ books }) => {
@@ -14,6 +15,7 @@ const Homepage = ({ books }) => {
       </div>
       <main>
         <Books books={books} />
+        <Sidebar />
       </main>
     </div>
   );
