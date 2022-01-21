@@ -6,6 +6,10 @@ h1 {
   font-family: "Lobster", cursive;
 }
 
+.homeContainer {
+  padding: 2.5rem 1rem;
+}
+
 .header {
   display: flex;
   align-items: center;
