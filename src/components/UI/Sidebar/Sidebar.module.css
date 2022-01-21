@@ -1,0 +1,47 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 13rem;
+  left: 2.8rem;
+  width: 23rem;
+  height: 30vw;
+  background-color: #090b28;
+  color: white;
+}
+
+.title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+  font-weight: 900;
+}
+
+.categorList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.categoryListItem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.4rem;
+  list-style-type: none;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  padding: 1rem 0;
+  width: 10rem;
+  cursor: pointer;
+}
+
+.categoryListItem:hover {
+  transform: scale(1.1);
+}
+
+.categoryListItem svg {
+  color: white;
+  margin-right: 10px;
+}
