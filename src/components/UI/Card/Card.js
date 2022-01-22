@@ -2,13 +2,16 @@ import styles from "./Card.module.css";
 
 const Card = ({ book }) => {
   let titleMaxLength = 20;
+
   const titleWithEllipsis =
     book.volumeInfo.title.length > titleMaxLength
       ? book.volumeInfo.title.substring(0, titleMaxLength) + "..."
       : book.volumeInfo.title;
 
   const authors = book.volumeInfo.authors.toString();
-  const categories = book.volumeInfo.categories.toString();
+  const categories =
+    book.volumeInfo.categories !== undefined &&
+    book.volumeInfo.categories.toString();
 
   return (
     <div className={styles.card}>

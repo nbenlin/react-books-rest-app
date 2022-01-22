@@ -13,7 +13,7 @@ const App = () => {
 
   const fetchBooks = () => {
     fetch(
-      `https://www.googleapis.com/books/v1/volumes?q=flowers+inauthor:keyes&key=${KEY}`
+      `https://www.googleapis.com/books/v1/volumes?q=flowers&orderBy=newest&key=${KEY}`
     )
       .then((res) => res.json())
       .then((data) => setData(data.items))
