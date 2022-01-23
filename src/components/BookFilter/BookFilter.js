@@ -3,11 +3,12 @@ import styles from "./BookFilter.module.css";
 import { BiSearchAlt as SearchIcon } from "react-icons/bi";
 import { RiCloseFill as ExitIcon } from "react-icons/ri";
 
-const BookFilter = () => {
+const BookFilter = ({ filterHandler }) => {
   const [text, setText] = useState("");
 
   const enteredTextHandler = (event) => {
     setText(event.target.value);
+    filterHandler(event.target.value);
   };
 
   const deleteTextHandler = () => {
