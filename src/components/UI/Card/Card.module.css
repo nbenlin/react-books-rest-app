@@ -11,6 +11,7 @@
 
 .cardBody {
   margin: 20px;
+  width: 18rem;
 }
 
 .image {
@@ -40,6 +41,11 @@
   font-weight: 600;
   font-size: 1.4rem;
   margin-top: 1.5rem;
+  max-width: 14rem;
+  max-height: 3.6rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .categories {
@@ -52,12 +58,14 @@
   margin-top: 2rem;
   background-color: #884c8840;
   border-radius: 12px;
+  max-height: 3.5rem;
   color: #ffffff80;
   padding: 10px;
   max-width: 16rem;
   text-align: center;
   text-overflow: ellipsis;
-  overflow: hidden;
   font-size: 1.2rem;
   font-weight: 600;
+  overflow: hidden;
+  white-space: nowrap;
 }
