@@ -13,6 +13,7 @@ const BookFilter = ({ filterHandler }) => {
 
   const deleteTextHandler = () => {
     setText("");
+    filterHandler("");
   };
 
   return (
@@ -21,6 +22,7 @@ const BookFilter = ({ filterHandler }) => {
         value={text}
         onChange={enteredTextHandler}
         className={styles.filterInput}
+        placeholder="Search books by name, author, genre and etc ..."
       />
       <SearchIcon className={styles.searchIcon} />
       {text && (

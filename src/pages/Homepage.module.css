@@ -13,6 +13,13 @@ h1 {
 .header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
 }
 
 .books {

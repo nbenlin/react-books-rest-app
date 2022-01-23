@@ -1,12 +1,12 @@
 import styles from "./Books.module.css";
-import BooksFilter from "../BookFilter/BookFilter";
 import BookList from "../BookList/BookList";
+import BookMenu from "../BookMenu/BookMenu";
 
-const Books = ({ books, filterHandler }) => {
+const Books = ({ books }) => {
   return (
     <div className={styles.booksWrapper}>
-      <BooksFilter filterHandler={filterHandler} />
-      <BookList books={books} />
+      <BookMenu />
+      {books !== undefined && <BookList books={books} />}
     </div>
   );
 };
