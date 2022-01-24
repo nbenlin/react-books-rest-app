@@ -8,6 +8,7 @@ const Homepage = ({
   filterHandler,
   menuClickHandler,
   sidebarClickHandler,
+  loading,
 }) => {
   return (
     <div className={styles.homeContainer}>
@@ -25,6 +26,7 @@ const Homepage = ({
       <main>
         <Books
           books={books}
+          loading={loading}
           filterHandler={filterHandler}
           menuClickHandler={menuClickHandler}
         />

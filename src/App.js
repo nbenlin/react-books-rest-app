@@ -6,6 +6,7 @@ const App = () => {
   const [data, setData] = useState([]);
   const [mainMenuId, setMainMenuId] = useState("");
   const [sidebarId, setSidebarId] = useState("");
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetchDataHandler();
@@ -21,6 +22,7 @@ const App = () => {
 
   const fetchDataHandler = (textToFilter) => {
     const filterText = textToFilter;
+    setLoading(true);
     if (mainMenuId.length > 0) {
       if (mainMenuId === "daily") {
         fetchSelectedBooks("love");
@@ -42,9 +44,13 @@ const App = () => {
       `https://www.googleapis.com/books/v1/volumes?q=${filterText}&orderBy=newest&key=${process.env.REACT_APP_API_KEY}`
     )
       .then((res) => res.json())
-      .then((data) => setData(data.items))
+      .then((data) => {
+        setLoading(false);
+        setData(data.items);
+      })
       .catch((err) => console.log("Error: ", err));
   };
+  console.log(loading);
 
   const fetchSelectedBooks = (subject) => {
     fetch(
@@ -62,6 +68,7 @@ const App = () => {
         books={data}
         menuClickHandler={menuClickHandler}
         sidebarClickHandler={sidebarClickHandler}
+        loading={loading}
       />
     </>
   );
