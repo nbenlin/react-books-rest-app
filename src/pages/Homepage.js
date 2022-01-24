@@ -3,6 +3,8 @@ import Books from "../components/Books/Books";
 import Sidebar from "../components/UI/Sidebar/Sidebar";
 import styles from "./Homepage.module.css";
 
+import fantasySvg from "../images/fantasy.svg";
+
 const Homepage = ({
   books,
   filterHandler,

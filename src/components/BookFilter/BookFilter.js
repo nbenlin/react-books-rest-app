@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./BookFilter.module.css";
-// import { BiSearchAlt as SearchIcon } from "react-icons/bi";
-// import { RiCloseFill as ExitIcon } from "react-icons/ri";
+import searchIcon from "../../images/search.svg";
+import deleteIcon from "../../images/delete.svg";
 
 const BookFilter = ({ filterHandler }) => {
   const [text, setText] = useState("");
@@ -24,10 +24,10 @@ const BookFilter = ({ filterHandler }) => {
         className={styles.filterInput}
         placeholder="Search books by name, author, genre and etc ..."
       />
-      {/* <SearchIcon className={styles.searchIcon} /> */}
+      <img className={styles.searchIcon} src={searchIcon} alt="searchicon" />
       {text && (
-        <span onClick={deleteTextHandler} className={styles.exitIcon}>
-          X
+        <span onClick={deleteTextHandler} className={styles.deleteIcon}>
+          <img src={deleteIcon} alt="deleteicon" />
         </span>
       )}
     </div>
