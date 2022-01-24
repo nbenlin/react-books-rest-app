@@ -1,7 +1,6 @@
 import styles from "./Bookdetails.module.css";
 
 const Bookdetails = ({ book }) => {
-  console.log(book.volumeInfo.description);
   return (
     <div className={styles.detailsContainer}>
       <div className={styles.header}>

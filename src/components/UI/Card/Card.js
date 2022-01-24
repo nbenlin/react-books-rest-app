@@ -1,8 +1,10 @@
+import { useState } from "react";
 import Modal from "../Modal/Modal";
 import styles from "./Card.module.css";
 import Bookdetails from "../../BookDetails/Bookdetails";
 
 const Card = ({ book }) => {
+  const [toggleModal, setToggleModal] = useState(false);
   let maxTextLength = 20;
 
   const titleWithEllipsis =
@@ -18,9 +20,9 @@ const Card = ({ book }) => {
 
   return (
     <>
-      <Modal>
+      {/* <Modal>
         <Bookdetails book={book} />
-      </Modal>
+      </Modal> */}
       <div className={styles.card}>
         <div className={styles.cardHeader}>
           <a
