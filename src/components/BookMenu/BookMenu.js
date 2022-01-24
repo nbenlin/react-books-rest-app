@@ -1,4 +1,3 @@
-import { useState } from "react";
 import styles from "./BookMenu.module.css";
 
 const BookMenu = ({ menuClickHandler }) => {

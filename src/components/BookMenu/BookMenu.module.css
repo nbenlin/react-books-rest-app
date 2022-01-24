@@ -36,6 +36,14 @@
   cursor: pointer;
 }
 
+.daily:hover,
+.newReleases:hover,
+.bestsellers:hover,
+.newReleases:hover,
+.topAuthors:hover {
+  transform: scale(1.01);
+}
+
 .newReleases {
   grid-area: newReleases;
   background: #78dec7;
