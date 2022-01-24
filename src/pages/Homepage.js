@@ -3,7 +3,12 @@ import Books from "../components/Books/Books";
 import Sidebar from "../components/UI/Sidebar/Sidebar";
 import styles from "./Homepage.module.css";
 
-const Homepage = ({ books, filterHandler, menuClickHandler }) => {
+const Homepage = ({
+  books,
+  filterHandler,
+  menuClickHandler,
+  sidebarClickHandler,
+}) => {
   return (
     <div className={styles.homeContainer}>
       <div className={styles.header}>
@@ -23,7 +28,7 @@ const Homepage = ({ books, filterHandler, menuClickHandler }) => {
           filterHandler={filterHandler}
           menuClickHandler={menuClickHandler}
         />
-        <Sidebar />
+        <Sidebar sidebarClickHandler={sidebarClickHandler} />
       </main>
     </div>
   );

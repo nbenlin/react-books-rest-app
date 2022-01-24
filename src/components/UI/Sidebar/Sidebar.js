@@ -7,30 +7,45 @@ import {
 } from "react-icons/gi";
 import { CgMoreAlt as MoreIcon } from "react-icons/cg";
 
-const Sidebar = () => {
+const Sidebar = ({ sidebarClickHandler }) => {
   return (
     <div className={styles.sidebar}>
       <p className={styles.title}>pick a book for yourself</p>
       <div>
         <p className={styles.title}>Categories</p>
         <ul className={styles.categorList}>
-          <li className={styles.categoryListItem}>
+          <li
+            onClick={() => sidebarClickHandler("fantasy")}
+            className={styles.categoryListItem}
+          >
             <WizardIcon className="styles.icon" />
             <p>Fantasy</p>
           </li>
-          <li className={styles.categoryListItem}>
+          <li
+            onClick={() => sidebarClickHandler("romance")}
+            className={styles.categoryListItem}
+          >
             <HeartsIcon className="styles.icon" />
             <p>Romance</p>
           </li>
-          <li className={styles.categoryListItem}>
+          <li
+            onClick={() => sidebarClickHandler("poetry")}
+            className={styles.categoryListItem}
+          >
             <LoverIcon />
             <p>Poetry</p>
           </li>
-          <li className={styles.categoryListItem}>
+          <li
+            onClick={() => sidebarClickHandler("fiction")}
+            className={styles.categoryListItem}
+          >
             <ScienceIcon />
             <p>Fiction</p>
           </li>
-          <li className={styles.categoryListItem}>
+          <li
+            onClick={() => sidebarClickHandler("more")}
+            className={styles.categoryListItem}
+          >
             <MoreIcon />
             <p>More</p>
           </li>
