@@ -24,7 +24,7 @@ const BookFilter = ({ filterHandler }) => {
         className={styles.filterInput}
         placeholder="Search books by name, author, genre and etc ..."
       />
-      <SearchIcon className={styles.searchIcon} />
+      {/* <SearchIcon className={styles.searchIcon} /> */}
       {text && (
         <ExitIcon onClick={deleteTextHandler} className={styles.exitIcon} />
       )}
