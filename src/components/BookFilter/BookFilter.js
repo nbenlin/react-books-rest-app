@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./BookFilter.module.css";
-import { BiSearchAlt as SearchIcon } from "react-icons/bi";
+// import { BiSearchAlt as SearchIcon } from "react-icons/bi";
 import { RiCloseFill as ExitIcon } from "react-icons/ri";
 
 const BookFilter = ({ filterHandler }) => {
