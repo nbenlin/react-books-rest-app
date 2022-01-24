@@ -1,11 +1,11 @@
 import styles from "./Sidebar.module.css";
-import { FaHatWizard as WizardIcon } from "react-icons/fa";
-import {
-  GiOppositeHearts as HeartsIcon,
-  GiClover as LoverIcon,
-  GiMaterialsScience as ScienceIcon,
-} from "react-icons/gi";
-import { CgMoreAlt as MoreIcon } from "react-icons/cg";
+// import { FaHatWizard as WizardIcon } from "react-icons/fa";
+// import {
+//   GiOppositeHearts as HeartsIcon,
+//   GiClover as LoverIcon,
+//   GiMaterialsScience as ScienceIcon,
+// } from "react-icons/gi";
+// import { CgMoreAlt as MoreIcon } from "react-icons/cg";
 
 const Sidebar = ({ sidebarClickHandler }) => {
   return (
@@ -18,35 +18,35 @@ const Sidebar = ({ sidebarClickHandler }) => {
             onClick={() => sidebarClickHandler("fantasy")}
             className={styles.categoryListItem}
           >
-            <WizardIcon className="styles.icon" />
+            {/* <WizardIcon className="styles.icon" /> */}
             <p>Fantasy</p>
           </li>
           <li
             onClick={() => sidebarClickHandler("romance")}
             className={styles.categoryListItem}
           >
-            <HeartsIcon className="styles.icon" />
+            {/* <HeartsIcon className="styles.icon" /> */}
             <p>Romance</p>
           </li>
           <li
             onClick={() => sidebarClickHandler("poetry")}
             className={styles.categoryListItem}
           >
-            <LoverIcon />
+            {/* <LoverIcon /> */}
             <p>Poetry</p>
           </li>
           <li
             onClick={() => sidebarClickHandler("fiction")}
             className={styles.categoryListItem}
           >
-            <ScienceIcon />
+            {/* <ScienceIcon /> */}
             <p>Fiction</p>
           </li>
           <li
             onClick={() => sidebarClickHandler("more")}
             className={styles.categoryListItem}
           >
-            <MoreIcon />
+            {/* <MoreIcon /> */}
             <p>More</p>
           </li>
         </ul>
