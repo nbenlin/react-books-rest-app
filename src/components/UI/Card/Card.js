@@ -1,10 +1,6 @@
-import { useState } from "react";
-import Modal from "../Modal/Modal";
 import styles from "./Card.module.css";
-import Bookdetails from "../../BookDetails/Bookdetails";
 
 const Card = ({ book }) => {
-  const [toggleModal, setToggleModal] = useState(false);
   let maxTextLength = 20;
 
   const titleWithEllipsis =
@@ -20,33 +16,32 @@ const Card = ({ book }) => {
 
   return (
     <>
-      {/* <Modal>
-        <Bookdetails book={book} />
-      </Modal> */}
-      <div className={styles.card}>
-        <div className={styles.cardHeader}>
-          <a
-            href={book.volumeInfo.canonicalVolumeLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {book.volumeInfo.imageLinks?.thumbnail !== undefined && (
-              <img
-                className={styles.image}
-                src={book.volumeInfo.imageLinks?.thumbnail}
-                alt="book"
-              />
+      {book && (
+        <div className={styles.card}>
+          <div className={styles.cardHeader}>
+            <a
+              href={book.volumeInfo.canonicalVolumeLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {book.volumeInfo.imageLinks?.thumbnail !== undefined && (
+                <img
+                  className={styles.image}
+                  src={book.volumeInfo.imageLinks?.thumbnail}
+                  alt="book"
+                />
+              )}
+            </a>
+          </div>
+          <div className={styles.cardBody}>
+            <p className={styles.title}>{titleWithEllipsis}</p>
+            <p className={styles.author}>{book.volumeInfo.authors}</p>
+            {categoryWithEllipsis && (
+              <p className={styles.categoryName}>{categoryWithEllipsis}</p>
             )}
-          </a>
+          </div>
         </div>
-        <div className={styles.cardBody}>
-          <p className={styles.title}>{titleWithEllipsis}</p>
-          <p className={styles.author}>{book.volumeInfo.authors}</p>
-          {categoryWithEllipsis && (
-            <p className={styles.categoryName}>{categoryWithEllipsis}</p>
-          )}
-        </div>
-      </div>
+      )}
     </>
   );
 };

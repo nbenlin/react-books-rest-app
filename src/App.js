@@ -50,14 +50,13 @@ const App = () => {
       })
       .catch((err) => console.log("Error: ", err));
   };
-  console.log(loading);
 
   const fetchSelectedBooks = (subject) => {
     fetch(
-      `https://www.googleapis.com/books/v1/volumes?q=subject:${subject}&startIndex=54&maxResults=6`
+      `https://www.googleapis.com/books/v1/volumes?q=subject:${subject}&maxResults=40&startIndex=21`
     )
       .then((res) => res.json())
-      .then((data) => setData(data.items))
+      .then((data) => data !== undefined && setData(data.items))
       .catch((err) => console.log("Error: ", err));
   };
 
