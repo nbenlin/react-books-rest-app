@@ -53,7 +53,7 @@ const App = () => {
 
   const fetchSelectedBooks = (subject) => {
     fetch(
-      `https://www.googleapis.com/books/v1/volumes?q=subject:${subject}&maxResults=40&startIndex=21`
+      `https://www.googleapis.com/books/v1/volumes?q=subject:${subject}&maxResults=40&startIndex=21&key=${process.env.REACT_APP_API_KEY}`
     )
       .then((res) => res.json())
       .then((data) => setData(data.items))
