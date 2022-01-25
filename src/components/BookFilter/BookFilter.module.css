@@ -50,3 +50,30 @@
 .deleteIcon:hover {
   transform: scale(1.1);
 }
+
+@media screen and (max-width: 1000px) {
+  .filterInput {
+    width: 55rem;
+    height: 50px;
+    font-size: 1.6rem;
+    padding-left: 1rem;
+  }
+
+  .searchIcon {
+    right: 2.45rem;
+    top: 0.7rem;
+    color: #ffffff;
+    width: 35px;
+    height: 35px;
+  }
+
+  .deleteIcon {
+    right: 7rem;
+    top: 0.7rem;
+  }
+
+  .deleteIcon img {
+    width: 25px;
+    height: 25px;
+  }
+}

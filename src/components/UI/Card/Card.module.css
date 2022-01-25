@@ -69,3 +69,42 @@
   overflow: hidden;
   white-space: nowrap;
 }
+
+@media screen and (max-width: 1000px) {
+  .card {
+    width: 300px;
+    height: 250px;
+  }
+
+  .cardBody {
+    margin: 20px;
+    width: 15rem;
+  }
+
+  .image {
+    top: -40px;
+    left: 20px;
+    width: 100px;
+    height: 150px;
+  }
+
+  .title {
+    font-size: 1.7rem;
+    font-weight: 900;
+    width: 17rem;
+    height: 5rem;
+    overflow: hidden;
+  }
+
+  .author {
+    color: #ffffff80;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    max-width: 14rem;
+    max-height: 3.6rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
