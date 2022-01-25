@@ -8,7 +8,6 @@ import svg5 from "../../../images/science.svg";
 const Sidebar = ({ sidebarClickHandler }) => {
   return (
     <div className={styles.sidebar}>
-      <p className={styles.title}>pick a book for yourself</p>
       <div>
         <p className={styles.title}>Categories</p>
         <ul className={styles.categorList}>
