@@ -15,6 +15,7 @@ const App = () => {
   const menuClickHandler = (menuName) => {
     setMainMenuId(menuName);
   };
+  const tst = "";
 
   const sidebarClickHandler = (sidebarName) => {
     setSidebarId(sidebarName);
