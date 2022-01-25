@@ -56,7 +56,7 @@ const App = () => {
       `https://www.googleapis.com/books/v1/volumes?q=subject:${subject}&maxResults=40&startIndex=21`
     )
       .then((res) => res.json())
-      .then((data) => data !== undefined && setData(data.items))
+      .then((data) => setData(data.items))
       .catch((err) => console.log("Error: ", err));
   };
 
